@@ -10,16 +10,16 @@
 }
 
 .site-title {
+  color: $brand-color;
   font-family: 'Londrina Solid', cursive;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 0;
   float: left;
-
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-color;
     }
 }
 
@@ -91,6 +91,25 @@
     }
 }
 
+/**
+ * Main content
+ */
+
+.color-bar {
+  height: .5rem;
+  width: 10rem;
+  background-color: $brand-color;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-block {
+  background-image: url(images/performance.jpg);
+  height: 20rem;
+  background-color: $brand-color;
+  width: 100%;
+}
+
 
 
 /**
@@ -158,6 +177,12 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+}
+
+.ukulele-icon {
+  width: 5rem;
+  float: left;
+  margin-right: 1rem;
 }
 
 
