@@ -10,7 +10,7 @@
 }
 
 .site-title {
-  color: $brand-color;
+  color: $text-color;
   font-family: 'Londrina Solid', cursive;
   font-size: 1rem;
   text-transform: uppercase;
@@ -95,20 +95,16 @@
  * Main content
  */
 
-.color-bar {
-  height: .5rem;
-  width: 10rem;
-  background-color: $brand-color;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.section-vertical-padding {
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
 }
 
-.image-block {
-  background-image: url(images/performance.jpg);
-  height: 20rem;
-  background-color: $brand-color;
+.secondary-bg {
+  background-color: $grey-color-light;
   width: 100%;
 }
+
 
 
 
@@ -117,6 +113,8 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
+    background-color: $grey-color-dark;
+    color: white;
 }
 
 .footer-heading {
@@ -191,7 +189,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
 }
 
 .page-heading {

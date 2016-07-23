@@ -9,14 +9,12 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-image: url("/images/eggshell.jpg");
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -27,7 +25,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -35,12 +32,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-.londrina {
-  font-family: 'Londrina Solid', cursive;
-  text-transform: uppercase;
+    /*margin-bottom: $spacing-unit / 2;*/
 }
 
 p {
@@ -49,11 +41,10 @@ p {
 
 h1 {
   font-family: 'Londrina Solid', cursive;
-  font-size: 8rem;
-  line-height: 7rem;
+  font-size: 4rem;
+  line-height: 3.25rem;
   text-transform: uppercase;
 }
-
 
 
 /**
@@ -63,7 +54,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
 
 
 /**
@@ -76,7 +66,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
 
 
 /**
@@ -94,14 +83,12 @@ li {
 }
 
 
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
 
 
 /**
@@ -120,7 +107,6 @@ a {
         text-decoration: underline;
     }
 }
-
 
 
 /**
