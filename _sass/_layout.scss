@@ -92,17 +92,54 @@
 }
 
 /**
- * Main content
+ * General content
  */
 
 .section-vertical-padding {
   padding-top: $spacing-unit * 2;
-  padding-bottom: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2.5;
 }
 
 .secondary-bg {
   background-color: $grey-color-light;
   width: 100%;
+}
+
+.secondary-header {
+  background-color: #ffffff;
+  padding: $spacing-unit / 2;
+  display: inline-block;
+}
+
+/**
+ * Top marquee
+ */
+
+.intro-text {
+  line-height: 2.25rem;
+}
+
+
+/**
+ * Photos section
+ */
+
+.photos {
+  background-image: url("../images/collage-fpo.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+ /**
+ * Founders section
+ */
+
+.founder-block {
+  transition: background-color 0.5s ease;
+}
+
+.founder-block:hover {
+  background-color: red;
 }
 
 
@@ -176,13 +213,6 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-.ukulele-icon {
-  width: 5rem;
-  float: left;
-  margin-right: 1rem;
-}
-
 
 
 /**
