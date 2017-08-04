@@ -117,11 +117,11 @@ h3 {
  * Links
  */
 a {
-    color: red;
+    color: inherit;
     text-decoration: none;
 
     &:hover {
-        color: red;
+        color: #1EAEDB;
         text-decoration: none;
     }
 }
