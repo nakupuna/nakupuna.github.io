@@ -1,97 +1,4 @@
 /**
- * Site header
- */
-.site-header {
-    min-height: 56px;
-    padding-top: 50px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-  color: $text-color;
-  font-family: 'Londrina Solid', cursive;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 0;
-  float: left;
-    &,
-    &:visited {
-        color: $brand-color;
-    }
-}
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
-}
-
-/**
  * General content
  */
 
@@ -105,32 +12,23 @@
   padding-bottom: $spacing-unit * 4;
 }
 
-.secondary-bg {
-  background-color: $grey-color-light;
-  width: 100%;
-}
-
-.secondary-header {
-  background-color: #ffffff;
-  padding: $spacing-unit / 2;
-  display: inline-block;
-}
-
 /**
  * Top marquee
  */
 
- .intro {
+ .intro-section {
   color: #ffffff;
-  background-image: url("../images/sunset.jpg");
+  background-image: url("../images/sunset.png");
   background-size: cover;
  }
 
-.intro p {
-  font-size: 1.25rem;
+.intro-section p {
+  font-size: 1.125rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
 }
 
-.intro img {
+.intro-section img {
   margin: 0;
 }
 
@@ -138,13 +36,18 @@
  * Performances section
  */
 
-.performances {
+.performances-section {
   color: #3C2109;
   background: url("../images/eggshell.jpg") repeat top center;
 }
 
-.performances a {
+.performances-section a {
   color: #F4EFEC;
+}
+
+.performances-section p {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
 }
 
 .photo-thumb {
@@ -161,10 +64,10 @@
  * Photos section
  */
 
-.photos {
+.photos-section {
   background-image: url("../images/photocollage.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   height: 400px;
 }
 
@@ -181,6 +84,11 @@
   color: #F4EFEC;
 }
 
+.articles-section p {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
  /**
  * Music section
  */
@@ -191,7 +99,13 @@
   background-size: cover;
 }
 
+/**
+ * Weather section
+ */
 
+ .weather-section {
+
+ }
 
 
 /**
@@ -199,144 +113,38 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background-color: #3C2109;
+    background-image: url("../images/rainbow-island.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     color: white;
+    height: 600px;
+    position: relative;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.footer-text {
+    position: absolute;
+    bottom: 40px;
+    color: #ffffff;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.footer-text h4 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
 }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+.footer-text p {
+    font-size: .85rem;
+    margin-bottom: .5rem;
 }
 
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
-    width:         calc(40% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
-    width:         calc(40% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+.footer-text .legal-text{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
 }
