@@ -126,15 +126,20 @@
  * Quote section
  */
 
- .quote-section {
+.quote-section {
   color: #3C2109;
   text-align: center;
   padding-left: 16rem;
   padding-right: 16rem;
  }
 
- .quote-section h2 {
+.quote-section h2 {
   margin-bottom: 2rem;
+ }
+
+.quote-section p {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
  }
 
 /**
