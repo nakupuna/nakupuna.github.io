@@ -132,7 +132,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
+  color: #ffffff;
   border-color: #888;
   outline: 0; }
 .button.button-primary,
@@ -156,6 +156,10 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+
+  .button:hover {
+    background-color: #8a5d3b;
+  }
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -18,14 +18,25 @@
 
  .intro-section {
   color: #ffffff;
-  background-image: url("../images/sunset.png");
-  background-size: cover;
+  padding-bottom: 12rem;
+  position: relative;
+  background: #f7ab96; /* Old browsers */
+  background: -moz-linear-gradient(top, #f7ab96 0%, #ea8dae 52%, #9698c8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f7ab96 0%,#ea8dae 52%,#9698c8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f7ab96 0%,#ea8dae 52%,#9698c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ab96', endColorstr='#9698c8',GradientType=0 ); /* IE6-9 */
+ }
+
+ .ocean-tree {
+  position: absolute;
+  bottom: 0;
  }
 
 .intro-section p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: 'Merriweather', serif;
   font-weight: 400;
+  z-index: 9999;
 }
 
 .intro-section img {
@@ -35,6 +46,16 @@
 /**
  * Performances section
  */
+
+.video-thumb {
+  position: relative;
+}
+
+ .video-icon {
+  position: absolute;
+  width: 4rem;
+  z-index: 9;
+ }
 
 .performances-section {
   color: #3C2109;
@@ -67,7 +88,8 @@
 .photos-section {
   background-image: url("../images/photocollage.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 400px;
 }
 
@@ -97,6 +119,7 @@
   color: #F4EFEC;
   background-image: url("../images/wood.jpg");
   background-size: cover;
+  text-align: center;
 }
 
 /**
@@ -104,7 +127,9 @@
  */
 
  .weather-section {
-
+    background-image: url("../images/plants.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
  }
 
 
@@ -118,7 +143,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     color: white;
-    height: 600px;
+    height: 700px;
     position: relative;
 }
 
@@ -134,17 +159,26 @@
 }
 
 .footer-text h4 {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-bottom: .5rem;
 }
 
 .footer-text p {
-    font-size: .85rem;
+    font-size: .7rem;
     margin-bottom: .5rem;
+}
+
+.flower {
+  width: 2rem;
+}
+
+.blue-extend {
+  background-color: red;
+  height: 100px;
 }
 
 .footer-text .legal-text{
   font-family: 'Londrina Solid', cursive;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 1px;
 }
