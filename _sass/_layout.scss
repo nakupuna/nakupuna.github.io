@@ -120,6 +120,8 @@
   background-image: url("../images/wood.jpg");
   background-size: cover;
   text-align: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 /**
@@ -147,10 +149,12 @@
  * Weather section
  */
 
- .weather-section {
-    background-image: url("../images/plants.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.weather-section {
+  background-image: url("../images/plants.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 6rem;
+  padding-right: 6rem;
  }
 
 
@@ -239,19 +243,29 @@ footer .legal-text{
     margin-bottom: $spacing-unit * 1.5;
   }
 
+  .music-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .quote-section {
     padding-left: 0;
     padding-right: 0;
- }
+  }
 
   .quote-section h2 {
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
- }
+  }
 
   .quote-section p {
     font-size: .75rem;
+  }
+
+  .weather-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 
 
