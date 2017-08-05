@@ -2,6 +2,11 @@
  * General content
  */
 
+.section-vertical-padding--small {
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+}
+
 .section-vertical-padding {
   padding-top: $spacing-unit * 3;
   padding-bottom: $spacing-unit * 3;
@@ -17,7 +22,7 @@
  */
 
  .intro-section {
-  color: #ffffff;
+  color: #3C2109;
   padding-bottom: 12rem;
   position: relative;
   background: #f7ab96; /* Old browsers */
@@ -47,16 +52,6 @@
  * Performances section
  */
 
-.video-thumb {
-  position: relative;
-}
-
- .video-icon {
-  position: absolute;
-  width: 4rem;
-  z-index: 9;
- }
-
 .performances-section {
   color: #3C2109;
   background: url("../images/eggshell.jpg") repeat top center;
@@ -78,6 +73,11 @@
   -moz-box-shadow: 0px 0px 20px 3px rgba(60,33,9,0.15);
   box-shadow: 0px 0px 20px 3px rgba(60,33,9,0.15);
   border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.photo-thumb:hover {
+  border-color: #fae2be;
 }
 
 
@@ -135,6 +135,7 @@
 
 .quote-section h2 {
   margin-bottom: 2rem;
+  line-height: 3rem;
  }
 
 .quote-section p {
@@ -156,15 +157,14 @@
 /**
  * Site footer
  */
-.site-footer {
-    padding: $spacing-unit 0;
-    background-image: url("../images/rainbow-island.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    color: white;
-    height: 700px;
-    position: relative;
+
+.sub-footer {
+  padding: $spacing-unit 0;
+  background-image: url("../images/rainbow-island.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 400px;
 }
 
 .site-footer a {
@@ -172,38 +172,103 @@
   cursor: pointer;
 }
 
-.footer-text {
-    position: absolute;
-    bottom: 40px;
-    color: #ffffff;
-    z-index: 99;
+footer {
+    color: #3C2109;
     width: 100%;
+    background-color: #5fc8de;
     text-align: center;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-}
-
-.footer-text h4 {
-    font-size: .9rem;
-    margin-bottom: .5rem;
-}
-
-.footer-text p {
-    font-size: .7rem;
-    margin-bottom: .5rem;
 }
 
 .flower {
   width: 2rem;
 }
 
-.blue-extend {
-  background-color: red;
-  height: 100px;
+footer h4 {
+    font-size: .9rem;
+    margin-bottom: .75rem;
 }
 
-.footer-text .legal-text{
+footer p {
+    font-size: .7rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer .legal-text{
   font-family: 'Londrina Solid', cursive;
   font-size: 1.125rem;
   letter-spacing: 1px;
 }
+
+
+/**
+ * Media Queries
+ */
+
+@media (max-width: 1000px) {
+  .quote-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .section-vertical-padding--small {
+    padding-top: $spacing-unit * 0;
+    padding-bottom: $spacing-unit * 1;
+  }
+
+  .section-vertical-padding {
+    padding-top: $spacing-unit * 1.5;
+    padding-bottom: $spacing-unit * 1.5;
+  }
+
+  .section-vertical-padding--large {
+    padding-top: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 2;
+  }
+
+  .nakupuna-logo {
+    width: 8rem;
+  }
+
+  .button-spacer {
+    margin-bottom: $spacing-unit * 1.5;
+  }
+
+  .quote-section {
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+  .quote-section h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+ }
+
+  .quote-section p {
+    font-size: .75rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
